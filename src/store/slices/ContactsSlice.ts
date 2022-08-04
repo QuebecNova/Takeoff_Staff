@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 interface ContactState {}
 
-const initialState: ContactState = {};
+const initialState: ContactState = {}
 
 const ContactSlice = createSlice({
-  name: "Contact",
-  initialState,
-  reducers: {},
-});
+    name: 'Contact',
+    initialState,
+    reducers: {},
+})
 
-export default ContactSlice.reducer;
+export default ContactSlice.reducer

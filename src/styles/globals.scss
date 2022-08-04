@@ -1,22 +1,18 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  font-family: "Comfortaa", cursive, sans-serif;
-  font-weight: 500;
-  border: none;
-}
-
-select:focus {
-  border: inherit;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-weight: 500;
+    border: none;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
