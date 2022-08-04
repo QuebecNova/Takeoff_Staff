@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function ContactsList() {
   return (
-    <div>ContactsList</div>
+    <div className='contacts__list'>ContactsList</div>
   )
 }
