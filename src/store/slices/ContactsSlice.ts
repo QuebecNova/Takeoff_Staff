@@ -10,4 +10,6 @@ const ContactSlice = createSlice({
     reducers: {},
 })
 
+export const {} = ContactSlice.actions
+
 export default ContactSlice.reducer

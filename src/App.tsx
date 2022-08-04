@@ -1,9 +1,14 @@
 import React from 'react';
+import { HashRouter } from 'react-router-dom';
+import NavBar from './components/Contacts/NavBar';
+import AppRouter from './pages/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <HashRouter>
+      <NavBar/>
+      <AppRouter/>
+    </HashRouter>
   );
 }
 
