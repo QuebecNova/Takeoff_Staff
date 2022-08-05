@@ -10,21 +10,21 @@ export default function NavBar() {
   const user = useAppSelector(state => state.user)
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
-  const [isAuth, setIsAuth] = useState(false)
+  const [componentIsAuth, setComponentIsAuth] = useState(false)
   
   //two useEffects because we need to update auth state if any of auth states changes
   //isAuth is local for navBar, user.isAuth for redux store
   useEffect(() => {
     const auth = !!localStorage.getItem('auth')
-    setIsAuth(auth)
+    setComponentIsAuth(auth)
   }, [user.isAuth])
 
   useEffect(() => {
-    dispatch(setUserAuth(isAuth))
-  }, [isAuth, dispatch])
+    dispatch(setUserAuth(componentIsAuth))
+  }, [componentIsAuth, dispatch])
 
   function logoutOrLogin() {
-    isAuth
+    componentIsAuth
       ? dispatch(login(false))
       : navigate('/login')
   }
@@ -32,7 +32,7 @@ export default function NavBar() {
   return (
     <nav>
       <div className='to-login'>
-          <Button onClick={logoutOrLogin}>{isAuth ? 'Выйти' : 'Войти'}</Button >
+          <Button onClick={logoutOrLogin}>{componentIsAuth ? 'Выйти' : 'Войти'}</Button >
         </div>
     </nav>
   )
