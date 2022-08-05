@@ -1,9 +1,11 @@
+@import '/src/styles/variables.scss';
+
 .loader {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px dashed teal;
-    animation: rotate 1.5s infinite linear;
+    border: 3px dashed $blueishPurple;
+    animation: rotate 2s infinite ease-out;
 }
 
 .loaderWrapper {

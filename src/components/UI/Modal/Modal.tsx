@@ -1,7 +1,13 @@
-import React from 'react'
-import classes from './modal.module.css'
+import React, { ReactNode } from 'react'
+import classes from './modal.module.scss'
 
-export default function Modal({children, visible, setModal}) {
+type Props = {
+  visible: boolean,
+  setModal: (isOpen: boolean) => void,
+  children?: ReactNode
+}
+
+export default function Modal({children, visible, setModal} : Props) {
 
     const rootClasses = [classes.modal]
     if (visible) {

@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.contacts {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.contacts__list-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contacts__contact {
+    border: 1px solid $lightBlueBorders;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .contacts__contact-name {
+        font-weight: 600;
+    }
+    .contacts__contact-email {
+        font-weight: 200;
+    }
+    .contacts__contact-phone {
+        font-weight: 200;
+    }
+    .contacts__contact-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+}
