@@ -15,8 +15,8 @@ export default function Modal({children, visible, setModal} : Props) {
     }
     
   return (
-    <div className={rootClasses.join(' ')} onClick={() => setModal(false)}>
-        <div className={classes.modalContent} onClick={e => e.stopPropagation()}>
+    <div className={rootClasses.join(' ')} onMouseDown={() => setModal(false)}>
+        <div className={classes.modalContent} onMouseDown={e => e.stopPropagation()}>
             {children}
         </div>
     </div>

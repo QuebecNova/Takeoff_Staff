@@ -12,7 +12,7 @@ export default function NavBar() {
   const navigate = useNavigate()
   const [componentIsAuth, setComponentIsAuth] = useState(false)
   
-  //two useEffects because we need to update auth state if any of auth states changes
+  //we update auth state if any of auth states changes
   //componentIsAuth is local for NavBar, user.isAuth for redux store
   useEffect(() => {
     const auth = !!localStorage.getItem('auth')

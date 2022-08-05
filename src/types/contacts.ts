@@ -17,13 +17,15 @@ interface Company {
     bs: string
 }
 
+//some values are not needed,
+//because we don't want them to filled by user when he adds new contact
 export interface IContact {
-    id: number
+    id?: number
     name: string
-    username: string
+    username?: string
     email: string
-    address: Address
+    address?: Address
     phone: string
-    website: string
-    company: Company
+    website?: string
+    company?: Company
 }
