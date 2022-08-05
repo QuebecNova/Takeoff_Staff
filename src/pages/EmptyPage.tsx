@@ -7,9 +7,9 @@ export default function EmptyPage() {
   const navigation = useNavigate()
 
   return (
-    <>
-      <Button onClick={() => navigation('/contacts')}> К контактам </Button>
+    <div className='emptyPage'>
       <h1>Тут ничего нет! Вы не ошиблись?</h1>
-    </>
+      <Button onClick={() => navigation('/contacts')}> К контактам </Button>
+    </div>
   )
 }

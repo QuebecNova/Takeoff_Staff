@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    padding: 20px 100px;
+    border: 1px solid $lightBlueBorders;
+    margin-top: 12%;
+    input {
+        margin-bottom: 10px;
+    }
+    button {
+        margin-top: 20px;
+    }
+}

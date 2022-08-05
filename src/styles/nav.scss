@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: $nav;
+    height: 5%;
+    margin-bottom: 15px;
+}
