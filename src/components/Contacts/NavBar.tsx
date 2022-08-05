@@ -3,7 +3,7 @@ import { useAppSelector } from '../../hooks/redux'
 import Button from '../UI/Button'
 import { useAppDispatch } from './../../hooks/redux';
 import { useNavigate } from 'react-router';
-import { login, setUserAuth } from '../../store/slices/UserSlice';
+import { loginLocal, setUserAuth } from '../../store/slices/UserSlice';
 
 export default function NavBar() {
 
@@ -25,14 +25,21 @@ export default function NavBar() {
 
   function logoutOrLogin() {
     componentIsAuth
-      ? dispatch(login(false))
+      ? dispatch(loginLocal(false))
       : navigate('/login')
+  }
+
+  function goToRegister() {
+    navigate('/registration')
   }
 
   return (
     <nav>
       <div className='to-login'>
-          <Button onClick={logoutOrLogin}>{componentIsAuth ? 'Выйти' : 'Войти'}</Button >
+          {!componentIsAuth && <Button onClick={goToRegister}>Регистрация</Button>}
+          <Button onClick={logoutOrLogin}>
+            {componentIsAuth ? 'Выйти' : 'Войти'}
+          </Button >
         </div>
     </nav>
   )

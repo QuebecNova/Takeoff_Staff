@@ -72,9 +72,24 @@ export default function EditContact(props : Props) {
   return (
     <div className='contacts__contact-edit-add'>
       <h3>Что хотите изменить?</h3>
-      <Input value={localName} type='text' onChange={changeName} label labelText='Имя'/>
-      <Input value={localEmail} type='text' onChange={changeEmail} label labelText='Почта'/>
-      <Input value={localPhone} type='text' onChange={changePhone} label labelText='Телефон'/>
+      <Input 
+        value={localName} 
+        type='text' 
+        onChange={changeName} 
+        label labelText='Имя'
+      />
+      <Input 
+        value={localEmail} 
+        type='text' 
+        onChange={changeEmail} 
+        label labelText='Почта'
+      />
+      <Input 
+        value={localPhone} 
+        type='text' 
+        onChange={changePhone} 
+        label labelText='Телефон'
+      />
       {error && <p className='contacts__contact-edit-add-error'>{error}</p>}
       <Button onClick={confirmChangesAndClose}>Изменить</Button>
     </div>

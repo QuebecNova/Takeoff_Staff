@@ -9,7 +9,6 @@ type Props = {
   placeholder?: string
   className?: string
   label?: boolean
-  id?: string
   labelText?: string
 }
 
@@ -17,10 +16,9 @@ export default function Input(props : Props) {
     
   return (
     <>
-        {props.label && <label htmlFor={props.id}>{props.labelText}</label>}
+        {props.label && <label>{props.labelText}</label>}
         <input
             type={props.type}
-            id={props.id || ''}
             className={`${classes.input} ${props.className || ''}`} 
             onChange={props.onChange} 
             onKeyDown={props.onKeyDown}

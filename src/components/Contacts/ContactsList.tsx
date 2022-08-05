@@ -53,7 +53,12 @@ export default function ContactsList() {
       </Modal>
       <div className='contacts__list-actions'>
         <Button onClick={showModal}>Добавить контакт</Button>
-        <Input value={search} type='search' onChange={changeSearchValue} placeholder='Поиск...'/>
+        <Input 
+          value={search} 
+          type='search' 
+          onChange={changeSearchValue} 
+          placeholder='Поиск...'
+        />
       </div>
       {filteredContactsData 
         ? renderedContacts

@@ -4,6 +4,7 @@ import { useAppSelector } from '../hooks/redux'
 import EmptyPage from './EmptyPage'
 import Login from './Login'
 import Contacts from './Contacts';
+import Register from './Register';
 
 export default function AppRouter() {
 
@@ -21,6 +22,7 @@ export default function AppRouter() {
         <Routes>
           <Route path='*' element={<Navigate to='/login'/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/registration' element={<Register/>}></Route>
         </Routes>
       }
     </div>

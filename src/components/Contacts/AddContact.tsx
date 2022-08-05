@@ -1,6 +1,7 @@
 import React, { Dispatch, SetStateAction, useState } from 'react'
 import { addContact } from '../../store/slices/ContactsSlice';
 import { IContact } from '../../types/contacts';
+import stringIsValid from '../../utils/stringIsValid';
 import Button from '../UI/Button'
 import Input from '../UI/Input'
 import { useAppDispatch } from './../../hooks/redux';
@@ -29,7 +30,7 @@ export default function AddContact({setAddIsVisible} : Props) {
     }
 
     function confirmAddAndClose() {
-        if (!name || !email || !phone) {
+        if (stringIsValid(name, email, phone)) {
             setError('Вы не что-то не указали')
             return
         }
@@ -45,9 +46,27 @@ export default function AddContact({setAddIsVisible} : Props) {
   return (
     <div className='contacts__contact-edit-add'>
       <h3>Кого хотите добавить?</h3>
-      <Input value={name} type='text' onChange={changeName} label labelText='Имя' placeholder='Какое-нибудь имя...'/>
-      <Input value={email} type='text' onChange={changeEmail} label labelText='Почта' placeholder='Почта...'/>
-      <Input value={phone} type='text' onChange={changePhone} label labelText='Телефон' placeholder='Телефон...'/>
+      <Input 
+        value={name} 
+        type='text' 
+        onChange={changeName} 
+        label labelText='Имя' 
+        placeholder='Какое-нибудь имя...'
+      />
+      <Input 
+        value={email} 
+        type='text' 
+        onChange={changeEmail} 
+        label labelText='Почта' 
+        placeholder='Почта...'
+      />
+      <Input 
+        value={phone} 
+        type='text'
+        onChange={changePhone} 
+        label labelText='Телефон' 
+        placeholder='Телефон...'
+      />
       {error && <p className='contacts__contact-edit-add-error'>{error}</p>}
       <Button onClick={confirmAddAndClose}>Добавить</Button>
     </div>

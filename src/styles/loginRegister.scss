@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.login {
+.loginRegister {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,5 +13,13 @@
     }
     button {
         margin-top: 20px;
+    }
+    .error {
+        margin-bottom: -18px;
+        color: $error;
+    }
+    .success {
+        text-align: center;
+        color: $allOK;
     }
 }
