@@ -49,5 +49,8 @@
     "tabWidth": 4,
     "semi": false,
     "singleQuote": true
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0"
   }
 }
