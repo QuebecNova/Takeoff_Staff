@@ -5,7 +5,7 @@
 
 Стек Фронта: React, Redux/toolkit, Scss, Axios, Typescript
 
-Стек Бека: Json-server, JsonWebToken, Nodemon
+Стек Бека: Node.js(16.16.0) Json-server, JsonWebToken, Nodemon
 
 # Настройка
 
