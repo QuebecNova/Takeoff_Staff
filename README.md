@@ -1,14 +1,18 @@
-# Getting Started with Create React App
+# Что тут есть?
+Авторизация с мок-сервером, редактируемый список контактов и возможность их добавлять.
+Контакты не сохраняются между сессиями, но зарегистрированный пользователь находится на вашей локальной ДБ [users.json](https://github.com/QuebecNova/Takeoff_Staff/blob/master/server/users.json)
 
-##Сначала склонируйте проект:
+# Настройка
+
+### Сначала склонируйте проект:
 
 ```bash
 git clone https://github.com/QuebecNova/Takeoff_Staff
 ```
 
-##Настройте клиент:
+### Настройте клиент:
 
-1. Установите зависимости:
+1. Из корневой директории проекта установите зависимости:
 
 ```bash
 npm i
@@ -20,7 +24,7 @@ npm i
 npm start
 ```
 
-##Далее вам нужно настроить сервер:
+### Далее вам нужно настроить сервер:
 
 1. Из корневой директории проекта откройте папку 'server':
 
@@ -34,10 +38,11 @@ cd server
 npm i
 ```
 
-3. Запустите сервер на порту 8000 (поменяйте в [server.js](https://github.com/QuebecNova/Takeoff_Staff/server/server.js), если он занят)
+3. Запустите сервер на порту 8000 (поменяйте в [server.js](https://github.com/QuebecNova/Takeoff_Staff/blob/master/server/server.js), если он занят)
 
 ```bash
 npm run start-auth
 ```
 
-##Готово. Удачного пользования! Приложение доступно в браузере по ссылке: [localhost:3000](http://localhost:3000/#/login)
+## Готово. Удачного пользования! 
+Приложение доступно в браузере по ссылке: [localhost:3000](http://localhost:3000/#/login)
