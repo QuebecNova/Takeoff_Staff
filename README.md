@@ -12,7 +12,7 @@ git clone https://github.com/QuebecNova/Takeoff_Staff
 
 ### Настройте клиент:
 
-1. Установите зависимости:
+1. Из корневой директории проекта установите зависимости:
 
 ```bash
 npm i
