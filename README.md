@@ -1,6 +1,6 @@
 # Что тут есть?
 Авторизация с мок-сервером, редактируемый список контактов и возможность их добавлять.
-Контакты не сохраняются между сессиями, но зарегистрированный пользователь находится на вашей локальной ДБ [database.json](https://github.com/QuebecNova/Takeoff_Staff/server/database.json)
+Контакты не сохраняются между сессиями, но зарегистрированный пользователь находится на вашей локальной ДБ [database.json](https://github.com/QuebecNova/Takeoff_Staff/blob/master/server/database.json)
 
 # Настройка
 
@@ -38,7 +38,7 @@ cd server
 npm i
 ```
 
-3. Запустите сервер на порту 8000 (поменяйте в [server.js](https://github.com/QuebecNova/Takeoff_Staff/server/server.js), если он занят)
+3. Запустите сервер на порту 8000 (поменяйте в [server.js](https://github.com/QuebecNova/Takeoff_Staff/blob/master/server/server.js), если он занят)
 
 ```bash
 npm run start-auth
