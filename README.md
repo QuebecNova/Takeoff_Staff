@@ -4,6 +4,7 @@
 Контакты не сохраняются между сессиями, но зарегистрированный пользователь находится на вашей локальной ДБ [users.json](https://github.com/QuebecNova/Takeoff_Staff/blob/master/server/users.json)
 
 Стек Фронта: React, Redux/toolkit, Scss, Axios, Typescript
+
 Стек Бека: Json-server, JsonWebToken, nodemon
 
 # Настройка
