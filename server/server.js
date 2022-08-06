@@ -13,6 +13,8 @@ server.use(jsonServer.defaults())
 
 const SECRET_KEY = '123456789'
 
+const PORT = 8000 //YOUR PORT HERE
+
 const expiresIn = '1h'
 
 // Create a token from a payload
@@ -132,6 +134,6 @@ server.use(/^(?!\/auth).*$/, (req, res, next) => {
 
 server.use(router)
 
-server.listen(8000, () => {
+server.listen(PORT, () => {
     console.log('Run Auth API Server')
 })
